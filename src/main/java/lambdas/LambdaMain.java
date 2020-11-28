@@ -30,5 +30,8 @@ public class LambdaMain {
 
         Consumer<String> dogPrinter = Dog::bark;
         dogPrinter.accept("WOOF");
+
+        Consumer<String> lengthPrinter = s -> System.out.println(s.length());
+        lengthPrinter.accept("labas");
     }
 }

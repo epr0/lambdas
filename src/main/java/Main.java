@@ -1,4 +1,5 @@
 import functionalinterface.service.*;
+import lambdas2.Lambda;
 
 public class Main {
 
@@ -23,5 +24,8 @@ public class Main {
 
         CustomGreeting customGreeting = message -> System.out.println("My message is - " + message);
         customGreeting.saySomething("I like trains.");
+
+        LambdaService runnableService = new RunnableService();
+        runnableService.execute();
     }
 }

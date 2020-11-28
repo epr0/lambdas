@@ -1,7 +1,10 @@
 package functionalinterface.service;
 
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 //The reason it's called a "functional interface"
 // is because it effectively acts as a function.
@@ -16,6 +19,15 @@ public class PredicateService implements LambdaService {
         Predicate<String> longerThanTen = (givenString) -> givenString.length() > 10;
         boolean isStringLongerThanTen = longerThanTen.test("TestEilute");
         System.out.println("[PREDICATE] Test string is longer than 10 symbols - " + isStringLongerThanTen);
+
+        List<String> names = Arrays.asList("Angela", "Aaron", "Bob", "Claire", "David");
+
+        List<String> namesWithA = names.stream()
+                .filter(name -> name.startsWith("A"))
+                .collect(Collectors.toList());
+
+        System.out.println("[PREDICATE 1] " + namesWithA);
+
     }
 
 }
