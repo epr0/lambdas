@@ -8,7 +8,10 @@ This implied a lot of unnecessary boilerplate code to define something that serv
 Java 8 added two new packages - util.stream and util.function
 
 # Functional interface 
-defined as interface which contains ONE abstract function.
+
+Any interface with a SAM(Single Abstract Method) is a functional interface, and its implementation may be treated as lambda expressions.
+
+Or defined as interface which contains ONE abstract function.
 Represents abstract concepts such as functions, actions or predicates.
 
 1. Predicate - boolean value function of one argument. Since this is interface we have to override the method with logic.
