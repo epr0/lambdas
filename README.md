@@ -16,7 +16,7 @@ Represents abstract concepts such as functions, actions or predicates.
 
 1. Predicate[InputType] - Accepts ONE argument returns boolean type result. In mathematical logic, a predicate is a function that receives a value and returns a boolean value.
 2. Consumer [InputType] - Opposed to Supplier. Accepts ONE argument but does NOT return the result.
-3. Function [InputType, OutputType] - accepts ONE argument and produces ONE result.
-4. Supplier [OutputType] - does NOT accept arguments and produces ONE result.
+3. Supplier [OutputType] - does NOT accept arguments and produces ONE result.
+4. Function [InputType, OutputType] - accepts ONE argument and produces ONE result.
 5. UnaryOperator - single argument with a return value.
 6. BinaryOperator - takes two arguments and returns one.
